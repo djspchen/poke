@@ -64,7 +64,7 @@ function clickLeftArrow(){
 }
 //API 名字、編號、圖片
 let allPokemonsName=[];
-fetch(`http://pokeapi.co/api/v2/pokemon?limit=${MAX_POKEMON}`)
+fetch(`https://pokeapi.co/api/v2/pokemon?limit=${MAX_POKEMON}`)
 .then((res)=>res.json())
 .then((data)=>{
     allPokemonsName=data.results;

@@ -7,7 +7,7 @@ const notFoundMessage =document.querySelector('#not-found-message');
 
 
 let allPokemons = [];
-fetch(`http://pokeapi.co/api/v2/pokemon?limit=${MAX_POKEMON}`)
+fetch(`https://pokeapi.co/api/v2/pokemon?limit=${MAX_POKEMON}`)
 .then((response) => response.json())
 .then((data) =>{
     allPokemons =data.results;
