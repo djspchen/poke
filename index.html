@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POKEBOX</title>
+    <link rel="icon" href="pic/pokeball.svg">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="pokemon.js" defer></script>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="header">
+            <div class="logo">
+                <img src="pic/pokeball.svg">
+                <h1>POKEBOX</h1>
+            </div>
+             <div class="search">
+                <img src="pic/searchengin-brands-solid.svg">
+                <input type="text" class='search-input' placeholder="Search" id="search-input">
+                
+                
+                <img src="pic/xmark-solid.svg" id="search-close"> 
+                <img src="pic/plug-solid.svg" id="search-sort">
+            </div>    
+        </div>
+           
+        
+       <div class="close">
+
+           <div class="filter">
+               <p class="font2">Sort by:</p>
+               <div class="filter-wrap">
+                   <div class="div">
+                       <input type="radio" id="number" name="fliter" value="number" checked>
+                       <label for="number" class="font3">Number</label>
+                   </div>
+                   <div class="div">
+                       <input type="radio" id="name" name="fliter" value="name">
+                       <label for="name" class="font3">Name</label>
+                   </div>
+               </div>
+           </div>
+       </div>
+
+        <section class="list">
+            
+            <div class="list-wrapper">
+
+            </div>
+
+            <div id="not-found-message" style="display: none;">
+                    Pokemon not found
+            </div>
+            
+        </section>
+    </div>
+</body>
+
+</html>

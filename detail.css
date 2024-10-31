@@ -1,0 +1,159 @@
+.arrow{
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    z-index: 10;
+}
+.main-center{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-image: linear-gradient( #cccccc,#808080),url('pic/pokedex.svg');
+    background-blend-mode: screen;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.header{
+    width: 65%;
+    height: 50px;
+    background-color:rgba(225, 225, 225, 0.8);
+    border-radius: 20px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+h1{
+    margin: 0 10px;
+    font-size: 32px;
+    font-weight: 800;
+}
+h2{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.pic{
+    width: 65%;
+    background-color: rgba(225, 225, 225, 0.8);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 6px solid rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+#pokePic{
+    width: 15%;
+}
+.leftArrow,.rightArrow{
+    padding: 60px 5%;
+}
+.leftArrow:hover{
+    background-color:rgb(250,250,250) ;
+    border-radius: 10px 0 0 10px;
+    
+}
+.rightArrow:hover{
+    background-color:rgb(250,250,250) ;
+    border-radius: 0 10px 10px 0;
+}
+
+.descript{
+    width: 65%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(225, 225, 225, 0.9);
+    border-radius: 10px;
+}
+.pokeTextDescript{
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 10px;
+    margin: 0 10px;
+}
+.descript-list{
+    font-size: 16px;
+    color: white;
+    display: flex;
+}
+.descript-list li{
+    background-color: brown;
+    border-radius: 5px;
+    padding: 3px 10px;
+    margin: 8px;
+
+}
+
+
+.pokeText{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.stat{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(225, 225, 225, 0.9);
+    border-radius: 10px;
+    width: 65%;
+    margin: 20px 0;
+
+}
+.stat .progress-container {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.stat .progress-container p{
+    background-color: cadetblue;
+    border-radius: 20px;
+    color: white;
+    padding: 3px;
+    font-weight: 500;
+    text-align: center;
+    font-size: 16px;
+    width:45px;
+    margin-right: 5px;
+    
+}
+
+.stat .progress-container .progress-bar{
+    position: relative;
+    height: 20px;
+    flex-grow: 11;
+    background-color:  rgba(155, 155, 155, 0.5);
+    border-radius: 25px;
+}
+span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color:cadetblue;
+    border-radius: 30px;
+    transition: width .5s linear;
+    /* transition-duration: 2s; */
+}
+.pokeText>p{
+    width: 50%;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 500;
+    background-color:rgba(225, 225, 225, 0.9);
+    margin-top: 15px;
+    padding: 5px;
+    border-radius:20px;
+}

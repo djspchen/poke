@@ -1,0 +1,112 @@
+.header{
+    position : sticky;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color:rgb(85, 180, 176);
+    
+}
+.font2{
+    font-size: 28px;
+    color:white;
+    font-weight: 800;
+}
+.font3{
+    font-size: 20px;
+    color: white;
+}
+.div{
+    padding: 5px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo>img{
+    padding-right: 10px;
+}
+.logo>h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    
+}
+.search{
+    display: flex;
+}
+.search>img{
+    padding:  5px;
+    
+}
+.list-wrapper{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+ 
+}
+
+.list-item{
+    background-color: rgb(127, 205, 205);
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px 3px; 
+    margin-top: 20px;
+    border-radius: 10px; 
+}
+.list-item:hover{
+    background-color:rgb(50, 205, 205)
+}
+.img-wrap{
+    height: 80px;   
+}
+.search img{
+    height: 16px;
+}
+.filter{
+    background-color:rgba(85, 180, 176,0.5);
+    display: flex;
+    padding: 10px;
+    
+}
+.filter-wrap{
+    display: flex;
+}
+.close{
+     display: none;
+}
+#not-found-message{
+    font-size: 100px;
+    text-align: center;
+    color: rgb(85, 180, 176);
+    margin: 100px auto;
+}
+@media screen and (max-width:767px) {
+    .header{
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .logo{
+        margin-bottom:15px;
+        
+    }
+    .filter{
+        justify-content: center;
+    }
+
+   
+    
+}
+
+
+
+
