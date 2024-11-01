@@ -23,8 +23,13 @@ function displayPoke(pokemon){
         let pokeRaw=pokemon.name
         let pokeName=pokeRaw.slice(0,1).toUpperCase()+pokeRaw.slice(1)
         const pokemonID= pokemon.url.split('/')[6];
+
+        const listItemWrap= document.createElement('div');
+        listItemWrap.className='list-item-warp';
+
         const listItem= document.createElement('div');
         listItem.className='list-item';
+//卡牌
         listItem.innerHTML=`
         <div class='number-wrap'>
             <p class='font2'>#${pokemonID}
@@ -39,11 +44,28 @@ function displayPoke(pokemon){
             </p>
         </div>
         `
+        listItemWrap.appendChild(listItem)
+
+//星星及Checkbox
+        const starItem= document.createElement('div');
+        starItem.className='star-item';
+        starItem.innerHTML=
+        `<div class='check-wrap'>
+        <input type="checkbox"id="poke${pokemonID}" name="ckbox"class="ckbox">
+            <label for="poke${pokemonID}"class="star${pokemonID}">
+            <img src="pic/star-regular.svg"class="star">
+            </label></div>`
+        listItemWrap.appendChild(starItem)
+    
         
+        listWrapper.appendChild(listItemWrap)
+
+        
+  //跳轉      
         listItem.addEventListener('click', ()=>{
             window.location.href=`./detail.html?id=${pokemonID}`})
-        
-        listWrapper.appendChild(listItem)
+
+            
     })
     
     
@@ -106,4 +128,6 @@ function close(){
     }
     
 }
+// console.log(document.querySelectorAll('.check-wrap>.star'));
 
+// document.querySelectorAll('star')
